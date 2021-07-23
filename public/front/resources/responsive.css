@@ -1,0 +1,348 @@
+@media only screen and (max-width:1200px) {
+    .number-button1 {
+        padding: 5px 10px;
+        width: 100px;
+    }
+    .button-container {
+        justify-content: flex-end;
+    }
+    .main-text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 50px 0 0 50px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .custom-select-wrapper {
+        margin: 0 0 20px 0;
+    }
+    .input-container {
+        margin: 0 0 15px 0;
+    }
+    .custom-select-wrapper {
+        justify-content: center;
+    }
+    .input-container {
+        display: flex;
+        justify-content: center;
+    }
+    .button-container {
+        display: flex;
+        justify-content: center;
+    }
+    .number-button1 {
+        width: 180px;
+    }
+    .main-text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 15px 0 0 15px;
+        width: 600px;
+    }
+    .main-text h1 {
+        font-size: 1.2em;
+        color: #fff;
+        font-weight: 600;
+        line-height: 40px;
+    }
+}
+
+@media only screen and (max-width: 978px) {
+    .number-unit {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .main-text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 20px 0 0 30px;
+        width: 522px;
+    }
+    .main-text h1 {
+        font-size: 1.5em;
+        color: #fff;
+        font-weight: 500;
+        line-height: 40px;
+    }
+    .prefix-selector {
+        display: flex;
+        justify-content: center;
+    }
+    .select {
+        width: 220px;
+        margin: 10px 0;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .main-text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 20px 0 0 15px;
+        width: 410px;
+    }
+    .main-text h1 {
+        font-size: 1.2em;
+        color: #fff;
+        font-weight: 500;
+        line-height: unset;
+    }
+    .main-button button {
+        width: 180px;
+        font-size: .8em;
+    }
+    .main-button img {
+        width: 15px;
+        margin: 0 0 0 10px;
+    }
+    .progress div.step span:nth-of-type(1) {
+        width: 40px;
+        height: 40px;
+        line-height: 32px;
+    }
+    .progress div:not(.step) {
+        margin-top: 18px;
+    }
+    .unresponsive-number {
+        display: none !important;
+    }
+    .responsive-number {
+        display: block !important;
+    }
+    .dropdown-menu.show {
+        left: 0px !important;
+    }
+    .pss{
+        display: flex;
+        justify-content: center !important;
+    }
+}
+
+@media only screen and (max-width: 625px) {
+    .pag-res{
+        display: block;
+    }
+    .pag-nores{
+        display: none;
+    }
+}
+@media only screen and (max-width: 576px) {
+    .header-inner {
+        padding: 0 15px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .header-inner {
+        justify-content: center;
+    }
+    .header-title {
+        margin: 0 0 15px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .main-text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 15px 0 0 15px;
+        width: 350px;
+    }
+    .main-text h1 {
+        font-size: 1em;
+        color: #fff;
+        font-weight: 500;
+        line-height: unset;
+    }
+    .main-button button {
+        height: 30px;
+    }
+}
+
+@media only screen and (max-width: 475px) {
+    .main-text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 15px 0 0 10px;
+        width: 310px;
+    }
+    .main-text h1 {
+        font-size: 1em;
+        color: #fff;
+        font-weight: 500;
+        line-height: unset;
+    }
+    .main-button button {
+        height: 30px;
+    }
+    .main-button button {
+        height: 30px;
+        width: 130px;
+        font-size: .7em;
+    }
+    .main-button img {
+        display: none;
+    }
+    .aaa {
+        margin: 10px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .main-button button {
+        height: 30px;
+        width: 130px;
+        font-size: .7em;
+    }
+    .main-button img {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .main-text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 10px 0 0 10px;
+        width: 250px;
+    }
+    .main-text h1 {
+        font-size: .8em;
+        color: #fff;
+        font-weight: 500;
+        line-height: unset;
+    }
+    .progress div.step span:nth-of-type(1) {
+        width: 30px;
+        height: 30px;
+        line-height: 23px;
+        font-size: .6em;
+    }
+    .progress div:not(.step) {
+        margin-top: 13px;
+    }
+    .right-arrow {
+        width: 10px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .main-button button {
+        height: 20px;
+        width: 110px;
+        font-size: .6em;
+        border-radius: 5px;
+    }
+    .main-button img {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 345px) {
+    .dropdown-menu.show {
+        top: 54px !important;
+        left: 28px !important;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    .header-inner {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 333px) {
+    .main-text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 5px 0 0 10px;
+        width: 250px;
+    }
+    .main-text h1 {
+        font-size: .7em;
+        color: #fff;
+        font-weight: 600;
+        line-height: unset;
+    }
+}
+
+@media only screen and (max-width: 270px) {
+    .header-title {
+        margin: auto;
+    }
+}
+/* FOR NUMBER-UNIT-RESPONSIVE */
+
+@media only screen and (max-width: 480px) {
+    .numbers {
+        width: 40px;
+        margin: 0 8px;
+    }
+}
+
+@media only screen and (max-width: 415px) {
+    .numbers {
+        width: 35px;
+        margin: 0 6px;
+    }
+}
+
+@media only screen and (max-width: 368px) {
+    .number-button1 {
+        padding: 5px 10px;
+    }
+    .number-button2 {
+        padding: 5px 20px;
+    }
+}
+
+@media only screen and (max-width: 355px) {
+    .numbers {
+        width: 30px;
+        margin: 0 4px;
+    }
+    .number-button1 {
+        padding: 5px 10px;
+    }
+    .number-button2 {
+        padding: 5px 20px;
+    }
+}
+
+@media only screen and (max-width: 297px) {
+    .numbers {
+        width: 25px;
+        margin: 0 4px;
+    }
+}
+
+@media only screen and (max-width: 297px) {
+    .numbers {
+        width: 25px;
+        margin: 0 3px;
+    }
+}
+
+@media only screen and (max-width: 250px) {
+    .numbers {
+        width: 20px;
+        margin: 0 3px;
+    }
+    .number-button1 {
+        padding: 5px 10px;
+    }
+}
+/* FOR NUMBER-UNIT-RESPONSIVE-END */
