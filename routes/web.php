@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Back\UserController;
 use App\Http\Controllers\Back\AuthController;
 use App\Http\Controllers\Back\NumberController;
+use App\Http\Controllers\Back\TestController;
 use App\Http\Controllers\HomeController;
 
 Route::match(['get', 'post'], '/', [HomeController::class, 'index'])->name('index');
@@ -16,6 +17,8 @@ Route::prefix('admin/')->middleware('isLogin')->group(function () {
 });
 
 Route::prefix('admin/')->middleware('isAdmin')->group(function () {
+    Route::get('tests/list', [TestController::class , 'allData'])->name('tests.list');
+    Route::resource('tests', TestController::class);
     Route::resource('users', UserController::class);
     Route::resource('numbers', NumberController::class);
     Route::post('numbers/import', [NumberController::class, 'import'])->name('import');
