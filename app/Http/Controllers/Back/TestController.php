@@ -10,22 +10,19 @@ use App\Models\Test;
 class TestController extends Controller
 {
 
-    public function index()
+    public function index(Request $request)
     {
-
         return view('test');
     }
 
     public function allData()
     {
+
         $data = Test::orderByDesc('created_at')->get();
+
         return response()->json($data);
     }
 
-    public function create()
-    {
-        //
-    }
 
     public function store(TestCreate $request)
     {
@@ -36,7 +33,7 @@ class TestController extends Controller
 
         if ($request->hasFile('image')) {
 
-            $imageName = time().'.'.$request->image->extension();  
+            $imageName = time() . '.' . $request->image->extension();
             $request->image->move(public_path('images'), $imageName);
         }
 
@@ -45,23 +42,27 @@ class TestController extends Controller
         return response()->json($data);
     }
 
-    public function show($id)
+    public function editData($id)
     {
-        //
+
+        $data = Test::find($id);
+        return response()->json($data);
     }
 
-    public function edit($id)
+    public function updateData(Request $request, $id)
     {
-        //
+        $data = Test::find($id)->update([
+            'name' => $request->name,
+            'email' => $request->email
+        ]);
+        return response()->json($data);
     }
 
-    public function update(Request $request, $id)
+
+    public function deleteData($id)
     {
-        //
+        $data = Test::find($id)->delete();
+        return response()->json($data);
     }
 
-    public function destroy($id)
-    {
-        //
-    }
 }

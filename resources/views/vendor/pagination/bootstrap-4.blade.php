@@ -1,4 +1,4 @@
-<div class="pag-res">
+<!-- <div class="pag-res">
 @if ($paginator->hasPages())
 <nav>
         <ul class="pagination">
@@ -13,7 +13,7 @@
                 </li>
             @endif
 
-            <!-- {{-- Pagination Elements --}}
+            {{-- Pagination Elements --}}
             @foreach ($elements as $element)
                 {{-- "Three Dots" Separator --}}
                 @if (is_string($element))
@@ -30,7 +30,7 @@
                         @endif
                     @endforeach
                 @endif
-            @endforeach -->
+            @endforeach
 
             {{-- Next Page Link --}}
             @if ($paginator->hasMorePages())
@@ -45,7 +45,7 @@
         </ul>
     </nav>
 @endif
-</div>
+</div> -->
 
 
 <div class="pag-nores">
