@@ -18,6 +18,7 @@ Route::prefix('admin/')->middleware('isLogin')->group(function () {
 });
 
 Route::prefix('admin/')->middleware('isAdmin')->group(function () {
+    
     Route::get('tests/list', [TestController::class , 'allData'])->name('tests.list');
     Route::get('test/edit/{id}', [TestController::class , 'editData'])->name('test.edit');
     Route::put('test/update/{id}', [TestController::class , 'updateData'])->name('test.update');

@@ -16,3 +16,4 @@ class Forms extends Component
         return view('livewire.forms' , ['forms' => $forms]);
     }
 }
+
