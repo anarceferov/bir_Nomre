@@ -3,11 +3,9 @@
 namespace App\Imports;
 
 use Maatwebsite\Excel\Concerns\ToModel;
-use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 use App\Models\Number;
-
-
+use Illuminate\Http\Request;
 
 
 class NumbersImport implements ToModel 
@@ -15,13 +13,6 @@ class NumbersImport implements ToModel
     public function model(array $row)
     {
 
-        // if(empty($row[1])) {
-        //     return Arr::prepend($row[1], 10);
-        // }
-
-        // if(empty($row[1])) {
-        //     return $row[1]->push(10);
-        // }
 
         return new Number([
             'prefix'=> str::substr($row[0] , 0 , 2),
@@ -32,10 +23,10 @@ class NumbersImport implements ToModel
             'num5'  => str::substr($row[0] , -3 , 1),
             'num6'  => str::substr($row[0] , -2 , 1),
             'num7'  => str::substr($row[0] , -1),
-            'price'   => $row[1],
-            'contact' => $row[2],
-            'seller'  => $row[3],
-            'operator'=> $row[4]
+            'price'   => $row[1] ?? 10,
+            'contact' => $row[2] ?? null,
+            'seller'  => $row[3] ?? null,
+            'operator'=> $row[4] ?? null
 
         ]);
     }
