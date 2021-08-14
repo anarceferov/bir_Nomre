@@ -70,10 +70,11 @@ class NumberController extends Controller
 
         $file = $request->file('excel');
 
+        // $fileName = $request->file('excel')->getClientOriginalName();
+        // $file2 = Str::substr($fileName, -4);
+        $fileEx = $request->file('excel')->extension();
 
-        $fileName = $request->file('excel')->getClientOriginalName();
-        $file2 = Str::substr($fileName, -4);
-        if ($file2 !== 'xlsx') {
+        if ($fileEx !== 'xlsx') {
             return redirect()->back()->withErrors('Fayl formatı xlsx olmalıdır...');
         } else {
             Excel::import(new NumbersImport, $file);
